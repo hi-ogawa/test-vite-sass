@@ -1,4 +1,4 @@
-Using ~100 sass files from [Vuetify](https://github.com/vuetifyjs/vuetify)
+Using ~100 sass files from [Vuetify](https://github.com/vuetifyjs/vuetify) (See [`./src/scss/index.js`](./src/scss/index.js))
 
 ## sass-embedded x modern-compiler
 
