@@ -1,5 +1,17 @@
 Using ~100 sass files from [Vuetify](https://github.com/vuetifyjs/vuetify) (See [`./src/scss/index.js`](./src/scss/index.js))
 
+## baseline without `./src/scss/index.js`
+
+```sh
+$ pnpm build
+vite v5.3.4 building for production...
+✓ 5 modules transformed.
+dist/index.html                 0.46 kB │ gzip: 0.29 kB
+dist/assets/index-Cz4zGhbH.css  1.21 kB │ gzip: 0.62 kB
+dist/assets/index-CfRIQD8M.js   1.14 kB │ gzip: 0.61 kB
+✓ built in 53ms
+```
+
 ## sass-embedded x modern-compiler
 
 ```sh
