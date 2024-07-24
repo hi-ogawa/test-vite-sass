@@ -14,6 +14,7 @@ const sassOptions = {
 
 export default defineConfig({
   css: {
+    preprocessorMaxWorkers: process.env.VITE_SASS_MAX_WORKERS ? true : undefined,
     preprocessorOptions: {
       scss: sassOptions,
       sass: sassOptions
