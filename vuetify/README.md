@@ -1,5 +1,15 @@
 Using ~100 sass files from [Vuetify](https://github.com/vuetifyjs/vuetify) (See [`./src/scss/index.js`](./src/scss/index.js))
 
+```sh
+$ pnpm dlx envinfo --system
+  System:
+    OS: Linux 6.9 Arch Linux
+    CPU: (16) x64 12th Gen Intel(R) Core(TM) i7-12650H
+    Memory: 21.39 GB / 31.06 GB
+    Container: Yes
+    Shell: 5.2.26 - /usr/bin/bash
+```
+
 | (sass/sass-embedded) | (modern-compiler/modern/legacy)    | pnpm build time |
 |----------------------|------------------------------------|-----------------|
 | sass-embedded        | modern-compiler                    | 441ms           |
