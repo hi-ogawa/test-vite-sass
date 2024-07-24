@@ -10,7 +10,7 @@ $ pnpm dlx envinfo --system
     Shell: 5.2.26 - /usr/bin/bash
 ```
 
-| (sass/sass-embedded) | (modern-compiler/modern/legacy)    | (preprocessorMaxWorkers) | pnpm build time |
+| (sass/sass-embedded) | (modern-compiler/modern/legacy)    | (preprocessorMaxWorkers) | build time |
 |----------------------|------------------------------------|--------------|-----------------|
 | sass-embedded        | modern-compiler                    |              | 441ms           |
 | sass-embedded        | modern                             | true         | 937ms           |
@@ -22,7 +22,7 @@ $ pnpm dlx envinfo --system
 | sass                 | modern                             |              | 2.75s           |
 | sass                 | legacy                             | true         | 2.04s           |
 | sass                 | legacy                             |              | 3.42s           |
-|                      | (baseline without vuetify imports) |              | 53ms            |
+|                      |              | (baseline without vuetify imports) | 53ms            |
 
 ## baseline without `./src/scss/index.js`
 
