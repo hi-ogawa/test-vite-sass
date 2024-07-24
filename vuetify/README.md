@@ -1,5 +1,15 @@
 Using ~100 sass files from [Vuetify](https://github.com/vuetifyjs/vuetify) (See [`./src/scss/index.js`](./src/scss/index.js))
 
+| (sass/sass-embedded) | (modern-compiler/modern/legacy)    | pnpm build time |
+|----------------------|------------------------------------|-----------------|
+| sass-embedded        | modern-compiler                    | 441ms           |
+| sass-embedded        | modern                             | 575ms           |
+| sass-embedded        | legacy                             | 1.38s           |
+| sass                 | modern-compiler                    | 2.78s           |
+| sass                 | modern                             | 2.75s           |
+| sass                 | legacy                             | 3.42s           |
+|                      | (baseline without vuetify imports) | (53ms)          |
+
 ## baseline without `./src/scss/index.js`
 
 ```sh
