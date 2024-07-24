@@ -10,15 +10,19 @@ $ pnpm dlx envinfo --system
     Shell: 5.2.26 - /usr/bin/bash
 ```
 
-| (sass/sass-embedded) | (modern-compiler/modern/legacy)    | pnpm build time |
-|----------------------|------------------------------------|-----------------|
-| sass-embedded        | modern-compiler                    | 441ms           |
-| sass-embedded        | modern                             | 575ms           |
-| sass-embedded        | legacy                             | 1.38s           |
-| sass                 | modern-compiler                    | 2.78s           |
-| sass                 | modern                             | 2.75s           |
-| sass                 | legacy                             | 3.42s           |
-|                      | (baseline without vuetify imports) | (53ms)          |
+| (sass/sass-embedded) | (modern-compiler/modern/legacy)    | (preprocessorMaxWorkers) | pnpm build time |
+|----------------------|------------------------------------|--------------|-----------------|
+| sass-embedded        | modern-compiler                    |              | 441ms           |
+| sass-embedded        | modern                             | true         | 937ms           |
+| sass-embedded        | modern                             |              | 575ms           |
+| sass-embedded        | legacy                             | true         | 1.34s           |
+| sass-embedded        | legacy                             |              | 1.38s           |
+| sass                 | modern-compiler                    |              | 2.78s           |
+| sass                 | modern                             | true         | 1.76s           |
+| sass                 | modern                             |              | 2.75s           |
+| sass                 | legacy                             | true         | 2.04s           |
+| sass                 | legacy                             |              | 3.42s           |
+|                      | (baseline without vuetify imports) |              | 53ms            |
 
 ## baseline without `./src/scss/index.js`
 
