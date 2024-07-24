@@ -92,7 +92,7 @@ dist/assets/index-DhVCjTjy.js     1.14 kB │ gzip:  0.61 kB
 ```
 
 ```sh
-$ VITE_SASS_API=legacy pnpm build
+$ VITE_SASS_API=legacy VITE_SASS_MAX_WORKERS=true pnpm build
 
 dist/index.html                   0.46 kB │ gzip:  0.29 kB
 dist/assets/index-DvNmfJmG.css  202.36 kB │ gzip: 28.26 kB
